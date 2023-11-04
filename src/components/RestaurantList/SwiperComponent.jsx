@@ -8,6 +8,7 @@ import styled from "styled-components";
 
 const Card = styled.div`
   height: 12rem;
+  padding: 1rem 1rem;
   margin-left: 0.25rem;
   overflow: hidden;
   border-radius: 1rem;
@@ -46,7 +47,7 @@ if (restoData.length) {
         {data.map((e, i) => (
           <SwiperSlide key={i}>
             <Card color={colorArr[i] ? colorArr[i] : "#F9D3D9"}>
-              <img src={e.images[0].url} style={{ height: "8rem" }} alt='fastor' />
+              <img src={e.images[0].url} style={{ height: "8rem", borderRadius: ".5rem" }} alt='fastor' />
               <div style={{ marginBottom: "0.5rem"  , height : '3.25rem' , display: 'flex' , justifyContent : 'center' , flexDirection : 'column'}}>
                 <div
                   style={{
